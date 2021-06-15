@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostPayX</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link rel="mainfest" href="mainfest.json">
+
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" class="img-fluid logo"></a>
+            
+            <div class="ml-auto" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                  <form>
+                    <div class="form-item">
+                      <input id="country_selector" type="text" class="d-none">
+                    </div>
+                    <div class="form-item" style="display:none;">
+                      <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
+                      <label for="country_selector_code">...and the selected country code will be updated here</label>
+                    </div>
+                    <button type="submit" style="display:none;">Submit</button>
+                  </form>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+    </div>
+</header>
+    
+<div class="nav-side-menu d-none">
+    <div class="brand">Press Curing Control</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Anlagenauswahl <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li class="active"><a href="#">RFT-H1</a></li>
+                    <li><a href="#">RFT-H2</a></li>
+                    <li><a href="#">BTB-H1</a></li>
+                    <li><a href="#">BTB-H2</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Auswertungen <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li>Trendmonitoring</li>
+                  <li>Alarmmonitoring</li>
+                  <li>Audit-Trail</li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Reporting <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li>Alarmstatistik</li>
+                  <li>Prozessfähigkeit</li>
+                </ul>
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+                 <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Service <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li>Sensorkonfiguration</li>
+                  <li>Betriebsarten</li>
+                </ul>
+
+            </ul>
+     </div>
+</div>
+
+<section class="payment-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-auto">
+        <h1>Making Ghost Payments Easier</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequuntur sapiente iste laboriosam eum? Nostrum ipsa repellat magni fuga doloribus.</p>
+        <a href="" class="btn-2">Make a payment</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/payment.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-pay">
+  <div class="container">
+    <div class="row no-gutter">
+      <div class="col-md-4">
+        <div class="section-heading-payment">
+         <h4> International</h4> 
+        </div>
+      
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Visa</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Card Number">
+                    <label for="inputEmail4" class="pay-details">Enter Digits Without Spaces</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                 
+                    <input type="text" class="form-control" placeholder="Select Month" id="datepicker-m">
+                    
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                   
+                    <input type="text" class="form-control" placeholder="Select Years" id="datepicker-y">
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <label for="inputEmail4" class="pay-details">Last Three Digits On Your Card Back</label>
+                  <div class="line"></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <label for="inputEmail4" class="pay-details">Leave The filed Blank If Card Has No Name</label>
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Visa</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Card Number">
+                    <label for="inputEmail4" class="pay-details">Enter Digits Without Spaces</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                 
+                    <input type="text" class="form-control" placeholder="Select Month" id="datepicker-m">
+                    
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                   
+                    <input type="text" class="form-control" placeholder="Select Years" id="datepicker-y">
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <label for="inputEmail4" class="pay-details">Last Three Digits On Your Card Back</label>
+                  <div class="line"></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <label for="inputEmail4" class="pay-details">Leave The filed Blank If Card Has No Name</label>
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 crypto-card">
+        <div class="section-heading-payment">
+         <h4> Crypto</h4> 
+        </div>
+      
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Etherium</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Etherium Address</label>
+                    <div class="form-row">
+                      <div class="col-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6>Amount</h6>
+                        
+                        <h6>0.00002312323 Ether</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Etherium</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Etherium Address</label>
+                    <div class="form-row">
+                      <div class="col-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6>Amount</h6>
+                        
+                        <h6>0.00002312323 Ether</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-heading-payment">
+         <h4> Local</h4> 
+        </div>
+      
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Easypaisa</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="number" class="form-control" id="" placeholder="Enter Account Number">
+                    <label for="" class="pay-details">11 Digit account number</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              
+
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="number" class="form-control" id="" placeholder="Enter Amount">
+                    
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="tel" class="form-control" id="" placeholder="Enter Phone (Optional)">
+                 
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/visa.png" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Easypaisa</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="number" class="form-control" id="" placeholder="Enter Account Number">
+                    <label for="" class="pay-details">11 Digit account number</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              
+
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="number" class="form-control" id="" placeholder="Enter Amount">
+                    
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="tel" class="form-control" id="" placeholder="Enter Phone (Optional)">
+                 
+                    <div class="line"></div>
+                  </div>
+               
+                 
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/logo-white.svg" alt="" class="img-fluid logo-footer">
+      </div>
+      <div class="col-md-4 text-center my-auto">
+        <p>All Rights Recived © GhostPayX</p>
+      </div>
+      <div class="col-md-4">
+        <ul class="d-flex">
+          <li>
+            <i class="fab fa-facebook-f"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fab fa-linkedin-in"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/countrySelect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+
+		<script>
+			$("#country_selector").countrySelect({
+			
+			});
+		</script>
+    <script>
+      $("#datepicker-y").datepicker({
+          format: "yyyy",
+          viewMode: "years", 
+          minViewMode: "years"
+      });
+
+      $("#datepicker-m").datepicker({
+          format: "mm",
+          viewMode: "months", 
+          minViewMode: "months"
+      });
+
+    </script>
+
+    <script>
+      $(document).ready(function() {
+  $(".set > a").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".content")
+        .slideUp(200);
+     
+    } else {
+     
+      $(".set > a").removeClass("active");
+      $(this).addClass("active");
+      $(".content").slideUp(200);
+      $(this)
+        .siblings(".content")
+        .slideDown(200);
+    }
+  });
+});
+
+    </script>
+</body>
+</html>
