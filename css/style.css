@@ -373,3 +373,6 @@ width: 45px;
 height: 45px;
 margin-right: 25px;
 }
+.dropdown-toggle::after{
+  display: none;
+}
