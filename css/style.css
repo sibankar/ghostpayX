@@ -371,7 +371,7 @@ margin-right: 25px;
 /*nav region*/
 .nav-item.region{
   margin-right: 30px;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 .country-select{
 	position:relative;
@@ -414,7 +414,7 @@ margin-right: 25px;
   content: url(../img/down.png);
   position: absolute;
   top: -10px;
-  left: -50%;
+  left: -60%;
 }
 
 .country-select .selected-flag .arrow.up{
@@ -509,7 +509,8 @@ only screen and (min-resolution: 2dppx){
 	}
 }
 .country-select .flag{
-	width:20px
+	width:20px;
+  transform: scale(1.5);
 }
 .country-select .flag.be{
 	width:18px
