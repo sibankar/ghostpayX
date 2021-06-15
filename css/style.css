@@ -1580,10 +1580,7 @@ only screen and (min-resolution: 2dppx){
 	height:10px;
 	background-position:-5610px 0px
 }
-.dropdown-toggle::after{
-  display: none;
 
-}
 .notification .dropdown-toggle::after{
   display: none;
 }
@@ -1593,4 +1590,23 @@ only screen and (min-resolution: 2dppx){
   background-size: cover;
   background-repeat: no-repeat;
 
+}
+.payment-banner h1{
+  width: 50%;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.payment-banner p{
+  color: #fff;
+  margin-bottom: 25px !important;
+}
+.btn-2{
+  color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.nav-item a{
+  color: #000;
 }
