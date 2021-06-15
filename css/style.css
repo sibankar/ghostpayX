@@ -298,7 +298,7 @@
 }
 footer{
     background: #313131;
-    padding: 80px 0;
+    padding: 70px 0 60px;
 }
 footer ul{
     list-style: none;
@@ -306,14 +306,15 @@ footer ul{
     float: right;
 }
 footer ul li{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 footer ul li i{
     font-size: 35px !important;
     color: #fff;
 }
 footer p{
-    color: #fff;
+    color: #aaa;
+    
 }
 .select2 .select2-container{
 width: auto !important;
@@ -351,4 +352,18 @@ width: auto !important;
 .custom-control-label::after {
   width: 25px !important;
   height: 25px !important;
+}
+.btn1{
+  color: #fff;
+  background-color: #fb822f;
+  border-radius: 0 !important;
+}
+.SignInWith{
+  font-weight: bold;
+}
+.logo{
+  max-width: 80%;
+}
+.logo-footer{
+  max-width: 65%;
 }
