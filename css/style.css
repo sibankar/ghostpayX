@@ -1584,3 +1584,13 @@ only screen and (min-resolution: 2dppx){
   display: none;
 
 }
+.notification .dropdown-toggle::after{
+  display: none;
+}
+.payment-banner{
+  padding: 20px 0;
+  background:url(../img/payment-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
