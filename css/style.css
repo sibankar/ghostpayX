@@ -308,9 +308,10 @@ footer ul{
 footer ul li{
     margin-right: 30px;
 }
-footer ul li i{
+footer ul li svg{
     font-size: 35px !important;
     color: #fff;
+    
 }
 footer p{
     color: #aaa;
@@ -366,4 +367,9 @@ width: auto !important;
 }
 .logo-footer{
   max-width: 65%;
+}
+.social-login img{
+width: 45px;
+height: 45px;
+margin-right: 25px;
 }
