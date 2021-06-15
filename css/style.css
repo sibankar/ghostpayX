@@ -1580,3 +1580,7 @@ only screen and (min-resolution: 2dppx){
 	height:10px;
 	background-position:-5610px 0px
 }
+.dropdown-toggle::after{
+  display: none;
+
+}
