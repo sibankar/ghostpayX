@@ -87,7 +87,7 @@
               <div class="menu-list">
         
                   <ul id="menu-content" class="menu-content collapse out">
-                      <li class="active">
+                      <li>
                         <a href="#">
                        Dashboard
                         </a>
@@ -107,7 +107,7 @@
                        Notifications
                         </a>
                       </li>
-                      <li>
+                      <li class="active">
                         <a href="#">
                        Settings
                         </a>
@@ -117,32 +117,48 @@
       </div>
       </div>
       <div class="col-lg-9 ">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex my-4">
-              <a href="" class="btn-3">make payment</a>
-              <a href="" class="btn-3">add fund</a>
-            </div>
+       <p class="font-weight-bold mt-2">Profile Setting</p>
+       <div class="setting-form">
+         <div class="row">
+           <div class="col-lg-6">
+             <label for="">first name</label>
+             <input type="text" class="form-control" placeholder="First Name">
+
+           </div>
+           <div class="col-lg-6">
+            <label for="">last name</label>
+            <input type="text" class="form-control" placeholder="Last Name">
+           </div>
+         </div>
+         <div class="row">
+          <div class="col-lg-6">
+            <label for="">email address</label>
+            <input type="email" class="form-control" placeholder="someone@gmail.com">
+
           </div>
-          <div class="col-lg-4">
-            <div class="payment-card">
-              <div class="payment-card-title"><h5>Current Total Balance</h5></div>
-              <div class="payment-card-amount" ><span>$XXX.XX</span></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="payment-card">
-              <div class="payment-card-title"><h5>pending transactions</h5></div>
-              <div class="payment-card-amount" ><span>$XXX.XX</span></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="payment-card">
-              <div class="payment-card-title"><h5>Canceled</h5></div>
-              <div class="payment-card-amount" ><span>$XXX.XX</span></div>
-            </div>
+          <div class="col-lg-6">
+           <label for="">phone number</label>
+           <input type="tel" class="form-control" placeholder="0123456789">
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label for="">password</label>
+            <input type="password" class="form-control">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label for="">retype password</label>
+            <input type="password" class="form-control">
+
+          </div>
+        </div>
+       </div>
+      
+         <a href="" class="btn-3 float-lg-right mr-0 my-4">save</a>
+       
       </div>
      
     </div>
