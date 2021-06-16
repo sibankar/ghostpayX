@@ -7,7 +7,7 @@ a:hover {
   text-decoration: none !important;
 }
 .bg-image {
-    background-image: url(../img/SVG-Login\ page-01.svg);
+    background-image: url(../img/background.svg);
     background-size: 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ a:hover {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .nav-side-menu {
       position: relative;
       width: 100%;
@@ -132,7 +132,7 @@ a:hover {
       line-height: 50px !important;
     }
   }
-  @media (min-width: 767px) {
+  @media (min-width: 992px) {
     .nav-side-menu .menu-list .menu-content {
       display: block;
     }
@@ -297,7 +297,7 @@ footer{
 footer ul{
     list-style: none;
     display: flex;
-    float: right;
+    
 }
 footer ul li{
     margin-right: 30px;
@@ -339,6 +339,7 @@ width: auto !important;
   border-radius: 0 !important;
   width: 25px !important;
   height: 25px !important;
+  left: -2.5rem !important;
 }
 .custom-control-label {
   margin-left: 20px !important;
@@ -347,6 +348,7 @@ width: auto !important;
 .custom-control-label::after {
   width: 25px !important;
   height: 25px !important;
+  left: -2.5rem !important;
 }
 .btn1{
   color: #fff;
@@ -1574,7 +1576,7 @@ only screen and (min-resolution: 2dppx){
 }
 .payment-banner{
   padding: 20px 0;
-  background:url(../img/payment-bg.svg);
+  background-image: linear-gradient(to top,#f27139,#f59130);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -1774,4 +1776,34 @@ padding: 30px 20px;
 }
 .setting-form .row{
   margin-bottom: 20px;
+}
+
+
+.prf-pic{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+@media (max-width:991px){
+	.text-center-mob{
+		text-align: center !important;
+	}
+	footer ul{
+		justify-content: center;
+	}
+	footer {
+		background: #313131;
+		padding: 50px 0 30px;
+	}
+	footer .col-md-4{
+		margin-bottom: 20px;
+	}
+	.social-login{
+		justify-content: center;
+	}
+}    
+@media (min-width:992px){
+	footer ul{
+		float: right;
+	}
 }
