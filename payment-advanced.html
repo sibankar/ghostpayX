@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet"/>
     <link rel="mainfest" href="mainfest.json">
 
 
@@ -19,12 +19,12 @@
   <header  class="header-sidebar">
     <div class="container">
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" class="img-fluid logo"></a>
+            <a class="navbar-brand" href="login.html"><img src="img/logo.svg" alt="" class="img-fluid logo"></a>
             
-            <div class="ml-auto" id="navbarNavDropdown">
-              <ul class="navbar-nav ml-auto">
+            <div class="ml-lg-auto" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item region">Region</li>
-                <li class="nav-item">
+                <li class="nav-item select-region">
                   <form>
                     <div class="form-item">
                       <input id="country_selector" type="text" class="d-none">
@@ -153,7 +153,7 @@
 <section class="section-pay">
   <div class="container">
     <div class="row no-gutter">
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="section-heading-payment">
          <h4> International</h4> 
         </div>
@@ -163,8 +163,8 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
-                  <h6 class="my-auto ml-2" >Visa</h6>
+                  <img src="img/visa.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >VISA</h6>
                 </div>
                 <div class="col-2 my-auto">
                   <i class="fas fa-chevron-down float-right"></i>
@@ -181,7 +181,7 @@
                 <div class="form-row">
                   <div class="form-group col-md-12">
                  
-                    <input type="number" class="form-control" id="inputEmail4" placeholder="Card Number">
+                    <input type="number" class="form-control" id="" placeholder="Card Number">
                     <label for="inputEmail4" class="pay-details">Enter Digits Without Spaces</label>
                     <div class="line"></div>
                   </div>
@@ -189,26 +189,26 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                  
-                    <input type="text" class="form-control" placeholder="Select Month" id="datepicker-m">
+                    <input type="text" class="form-control datepicker-m" placeholder="Select Month" id="">
                     
                     <div class="line"></div>
                   </div>
                   <div class="form-group col-md-6">
                    
-                    <input type="text" class="form-control" placeholder="Select Years" id="datepicker-y">
+                    <input type="text" class="form-control datepicker-y" placeholder="Select Years" id="">
                     
                     <div class="line"></div>
                   </div>
                 </div>
                 
                 <div class="form-group">
-                  <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                  <input type="password" class="form-control" id="" placeholder="CVV">
                     <label for="inputEmail4" class="pay-details">Last Three Digits On Your Card Back</label>
                   <div class="line"></div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-12">
-                    <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <input type="text" class="form-control" id="" placeholder="Card Holder name">
                     <label for="inputEmail4" class="pay-details">Leave The filed Blank If Card Has No Name</label>
                     <div class="line"></div>
                   </div>
@@ -225,8 +225,8 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
-                  <h6 class="my-auto ml-2" >Visa</h6>
+                  <img src="img/mastercard.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Master Card</h6>
                 </div>
                 <div class="col-2 my-auto">
                   <i class="fas fa-chevron-down float-right"></i>
@@ -251,13 +251,13 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                  
-                    <input type="text" class="form-control" placeholder="Select Month" id="datepicker-m">
+                    <input type="text" class="form-control datepicker-m" placeholder="Select Month" id="">
                     
                     <div class="line"></div>
                   </div>
                   <div class="form-group col-md-6">
                    
-                    <input type="text" class="form-control" placeholder="Select Years" id="datepicker-y">
+                    <input type="text" class="form-control datepicker-y" placeholder="Select Years" id="">
                     
                     <div class="line"></div>
                   </div>
@@ -270,7 +270,7 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-12">
-                    <input type="password" class="form-control" id="inputEmail4" placeholder="CVV">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Card Holder Name">
                     <label for="inputEmail4" class="pay-details">Leave The filed Blank If Card Has No Name</label>
                     <div class="line"></div>
                   </div>
@@ -282,8 +282,156 @@
             </div>
           </div>
         </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/Square_logo.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Square</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                    <label for="inputEmail4" class="pay-details">Enter Email Or Square ID</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+               
+                
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                    <label for="inputEmail4" class="pay-details">Enter Your Name</label>
+                  <div class="line"></div>
+                </div>
+             
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/paypal.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >PayPal</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                    <label for="inputEmail4" class="pay-details">Enter Email Or Paypal ID</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+               
+                
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                    <label for="inputEmail4" class="pay-details">Enter Your Name</label>
+                  <div class="line"></div>
+                </div>
+             
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/westernunion.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Western Union</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   <h6><strong>Contact us for transfer details at:</strong></h6>
+                    <label for="inputEmail4" class="pay-details">westernunion@ghostpayx.com</label>
+                    <div class="line"></div>
+                  </div>
+                </div>
+               
+                
+              
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/moneygram.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Moneygram</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <h6><strong>Contact us for transfer details at:</strong></h6>
+                <label for="inputEmail4" class="pay-details">moneygram@ghostpayx.com</label>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+       
       </div>
-      <div class="col-md-4 crypto-card">
+      <div class="col-lg-4 crypto-card">
         <div class="section-heading-payment">
          <h4> Crypto</h4> 
         </div>
@@ -293,8 +441,8 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
-                  <h6 class="my-auto ml-2" >Etherium</h6>
+                  <img src="img/ghostpay.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >GhostPayX</h6>
                 </div>
                 <div class="col-2 my-auto">
                   <i class="fas fa-chevron-down float-right"></i>
@@ -312,13 +460,13 @@
                   <div class="form-group col-md-12">
                  
                    
-                    <label for="inputEmail4" class="pay-details">Etherium Address</label>
+                    <label for="inputEmail4" class="pay-details">GhostPayX Address</label>
                     <div class="form-row">
-                      <div class="col-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
                       <div class="col-md-8 my-auto">
-                        <h6>Amount</h6>
+                        <h6 class="pay-details">Amount</h6>
                         
-                        <h6>0.00002312323 Ether</h6>
+                        <h6 class="pay-details">0.00002312323 GhostPayX</h6>
                       </div>
                     </div>
                     <div class="line"></div>
@@ -328,6 +476,224 @@
                  
                   <div class="form-group col-md-12">
                     <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/btc.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Bitcoin</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Botcoin Address</label>
+                    <div class="form-row">
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6 class="pay-details">Amount</h6>
+                        
+                        <h6 class="pay-details">0.00002312323 BTC</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/ethereum.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Ethereum</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Ethereum Address</label>
+                    <div class="form-row">
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6 class="pay-details">Amount</h6>
+                        
+                        <h6 class="pay-details">0.00002312323 Ether</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/litecoin.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Litecoin</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Litecoin Address</label>
+                    <div class="form-row">
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6>Amount</h6>
+                        
+                        <h6>0.00002312323 Litecoin</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/wetrust.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >WeTrust</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">WeTrust Address</label>
+                    <div class="form-row">
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6 class="pay-details">Amount</h6>
+                        
+                        <h6 class="pay-details">0.00002312323 WeTrust</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
                     <input type="text" class="form-control" placeholder="" >
                     
                     <div class="line"></div>
@@ -345,8 +711,8 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
-                  <h6 class="my-auto ml-2" >Etherium</h6>
+                  <img src="img/binance.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Binance Coin</h6>
                 </div>
                 <div class="col-2 my-auto">
                   <i class="fas fa-chevron-down float-right"></i>
@@ -364,13 +730,13 @@
                   <div class="form-group col-md-12">
                  
                    
-                    <label for="inputEmail4" class="pay-details">Etherium Address</label>
+                    <label for="inputEmail4" class="pay-details">Binance Address</label>
                     <div class="form-row">
-                      <div class="col-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
                       <div class="col-md-8 my-auto">
-                        <h6>Amount</h6>
+                        <h6 class="pay-details">Amount</h6>
                         
-                        <h6>0.00002312323 Ether</h6>
+                        <h6 class="pay-details">0.00002312323 Binance Coin</h6>
                       </div>
                     </div>
                     <div class="line"></div>
@@ -380,6 +746,60 @@
                  
                   <div class="form-group col-md-12">
                     <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
+                    <input type="text" class="form-control" placeholder="" >
+                    
+                    <div class="line"></div>
+                  </div>
+                </div>
+                
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/doge.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Doge Coin</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                   
+                    <label for="inputEmail4" class="pay-details">Doge Coin Address</label>
+                    <div class="form-row">
+                      <div class="col-md-4"><img src="img/qr-code.png" class="img-fluid"></div>
+                      <div class="col-md-8 my-auto">
+                        <h6 class="pay-details">Amount</h6>
+                        
+                        <h6 class="pay-details">0.00002312323 Doge Coin</h6>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                 
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4" class="pay-details">Click on the QR code above to open in the wallet</label>
+                    <i class="far fa-clipboard"></i>
                     <input type="text" class="form-control" placeholder="" >
                     
                     <div class="line"></div>
@@ -393,7 +813,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4 local-card">
         <div class="section-heading-payment">
          <h4> Local</h4> 
         </div>
@@ -403,7 +823,7 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
+                  <img src="img/easypaisa.svg" class=" img-fluid">
                   <h6 class="my-auto ml-2" >Easypaisa</h6>
                 </div>
                 <div class="col-2 my-auto">
@@ -421,17 +841,32 @@
                 <div class="form-row">
                   <div class="form-group col-md-12">
                  
-                    <input type="number" class="form-control" id="" placeholder="Enter Account Number">
-                    <label for="" class="pay-details">11 Digit account number</label>
+                    <label for="" class="pay-details">Scan the QR code and make the payment</label>
                     <div class="line"></div>
                   </div>
                 </div>
               
 
                 <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <input type="number" class="form-control" id="" placeholder="Enter Amount">
-                    
+                  <div class="form-group col-md-6">
+                    <div class="form-row">  
+                      <div class="form-group my-auto col-md-9">
+                        <img src="img/qr-code.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="form-group col-md-3 my-auto">
+                        <h4  class="pay-details">OR</h4>
+                      </div>
+                      
+                    </div>
+                   
+                   
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                   <label  class="pay-details">Pay directly in Account using Easypaisa App</label>
+                   <br>
+                   <h4><strong>Account Number:</strong></h4>
+                   <h4  class="pay-details">1234568790</h4>
                     <div class="line"></div>
                   </div>
                
@@ -439,11 +874,13 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-12">
-                    <input type="tel" class="form-control" id="" placeholder="Enter Phone (Optional)">
+                    <label  class="pay-details">Enter the transaction ID here to load the payment in your wallet</label>
+                    <input type="tel" class="form-control" id="" placeholder="Enter Transaction Reference Number Here">
                  
                     <div class="line"></div>
                   </div>
-               
+                  <div class="form-group col-md-12 text-right"><a href="payment-advanced.html" class="btn-3 mr-0">Load</a> </div>
+                  
                  
                 </div>
                
@@ -456,8 +893,8 @@
             <div class="select-pay-head">
               <div class="row">
                 <div class="col-10  d-flex">
-                  <img src="img/visa.png" class=" img-fluid">
-                  <h6 class="my-auto ml-2" >Easypaisa</h6>
+                  <img src="img/jazzcash.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Jazz Cash</h6>
                 </div>
                 <div class="col-2 my-auto">
                   <i class="fas fa-chevron-down float-right"></i>
@@ -474,17 +911,32 @@
                 <div class="form-row">
                   <div class="form-group col-md-12">
                  
-                    <input type="number" class="form-control" id="" placeholder="Enter Account Number">
-                    <label for="" class="pay-details">11 Digit account number</label>
+                    <label for="" class="pay-details">Scan the QR code and make the payment</label>
                     <div class="line"></div>
                   </div>
                 </div>
               
 
                 <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <input type="number" class="form-control" id="" placeholder="Enter Amount">
-                    
+                  <div class="form-group col-md-6">
+                    <div class="form-row">  
+                      <div class="form-group my-auto col-md-9">
+                        <img src="img/qr-code.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="form-group col-md-3 my-auto">
+                        <h4  class="pay-details">OR</h4>
+                      </div>
+                      
+                    </div>
+                   
+                   
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                   <label  class="pay-details">Pay directly in Account using Jazz Cash App</label>
+                   <br>
+                   <h4><strong>Account Number:</strong></h4>
+                   <h4  class="pay-details">1234568790</h4>
                     <div class="line"></div>
                   </div>
                
@@ -492,11 +944,12 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-12">
-                    <input type="tel" class="form-control" id="" placeholder="Enter Phone (Optional)">
+                    <label  class="pay-details">Enter the transaction ID here to load the payment in your wallet</label>
+                    <input type="tel" class="form-control" id="" placeholder="Enter Transaction Reference Number Here">
                  
                     <div class="line"></div>
                   </div>
-               
+                  <div class="form-group col-md-12 text-right"><a href="payment-advanced.html" class="btn-3 mr-0">Load</a> </div>
                  
                 </div>
                
@@ -504,6 +957,163 @@
             </div>
           </div>
         </div>
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/cheque.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Pay by Cheque</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <h6><strong>In Person</strong></h6>
+                    <label for="inputEmail4" class="pay-details">73 Jail Road, Gulberg9th Floor, Tricon Corporate Center, Lahore, 5400</label>
+                 
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="form-group col-md-12">
+                    <h6><strong>By Mail</strong></h6>
+                    <h6 for="inputEmail4" class="pay-details">Ghost Pay X
+                 </h6>
+                    <h6 for="inputEmail4" class="pay-details">
+                      Cantt GPO Lahore
+                       </h6>
+                       <h6 for="inputEmail4" class="pay-details">
+                         Sarfaraz Rafiqul Rd, Lahore, Punjab, Pakistan</h6>
+                 
+                    <div class="line"></div>
+                  </div>
+                 
+                 
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/inperson.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Pay in person</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                 
+                    <h6 ><strong>Address</strong> </h6>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <div class="d-flex">
+                      <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                      <h4 class="pay-details">73 Jail Road, Gulberg9th Floor, Tricon Corporate Center, Lahore, 5400</h4>
+                    </div>
+                    
+                    <div class="line"></div>
+                  </div>
+                  
+                </div>
+              
+
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="set select-pay-card mt-3">
+          <a>
+            <div class="select-pay-head">
+              <div class="row">
+                <div class="col-10  d-flex">
+                  <img src="img/bank.svg" class=" img-fluid">
+                  <h6 class="my-auto ml-2" >Bank Transfer</h6>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="fas fa-chevron-down float-right"></i>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </a>
+          <div class="content">
+            <div class="select-pay-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                 
+                    <h4><strong>Name on account:&nbsp;</strong></h4>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6"> <h4><span class="pay-details"> Ghost Pay X PTY LTD</span></h4> </div>
+                  <div class="form-group col-md-6">
+                 
+                    <h4><strong>Bank Name:&nbsp;</strong></h4>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6"> <h4> <span class="pay-details"> The Bank Of Punjab</span></h4> </div>
+                  <div class="form-group col-md-6">
+                 
+                    <h4><strong>Bank Address:&nbsp;</strong></h4>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6"> <h4> <span class="pay-details">BOP Tower, 10B, Block E-II, Main Boulevard Gulberg III Lahore, 54000</span></h4> </div>
+                  <div class="form-group col-md-6">
+                 
+                    <h4><strong>IBAN:&nbsp;</strong></h4>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6"> <h4> <span class="pay-details">GB80 TWRI 2314 7094 0280 39</span></h4> </div>
+                  <div class="form-group col-md-6">
+                 
+                    <h4><strong>BIC/SWIFT:&nbsp;</strong></h4>
+                    <div class="line"></div>
+                  </div>
+                  <div class="form-group col-md-6"> <h4> <span class="pay-details">BPUNPKKA052</span></h4> </div>
+                </div>
+              
+
+                
+               
+              </form>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 </div>
@@ -518,7 +1128,7 @@
         <img src="img/logo-white.svg" alt="" class="img-fluid logo-footer">
       </div>
       <div class="col-md-4 text-center my-auto order-2 order-lg-1">
-        <p>All Rights Recived © GhostPayX</p>
+        <p>All Rights Reserved © GhostPayX</p>
       </div>
       <div class="col-md-4  order-1 order-lg-2">
         <ul class="d-flex">
@@ -536,13 +1146,13 @@
     </div>
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/main.js"></script>
     <script src="js/countrySelect.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
 
 		<script>
 			$("#country_selector").countrySelect({
@@ -550,13 +1160,13 @@
 			});
 		</script>
     <script>
-      $("#datepicker-y").datepicker({
+      $(".datepicker-y").datepicker({
           format: "yyyy",
           viewMode: "years", 
           minViewMode: "years"
       });
 
-      $("#datepicker-m").datepicker({
+      $(".datepicker-m").datepicker({
           format: "mm",
           viewMode: "months", 
           minViewMode: "months"

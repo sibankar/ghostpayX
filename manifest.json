@@ -1,0 +1,39 @@
+{   
+    "name": "GhostPayX",
+    "short_name": "GhostPayX",
+    "description": "Smartest Payment Portal",
+    "theme_color": "#fb822f",
+    "background_color": "#fff",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/",
+  
+    "icons": [
+        {
+            "src": "/img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+	
+	"dependencies": 
+		{
+    "select2": "~4.0"
+		}
+}
+
